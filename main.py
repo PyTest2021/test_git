@@ -79,4 +79,4 @@ ui.toolButton_3.clicked.connect(st_set2)
 ui.toolButton_4.clicked.connect(st_set3)
 
 sys.exit(app.exec_())
-# чтото доб
+# чтото доб с компа
