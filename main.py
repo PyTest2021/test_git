@@ -1,5 +1,5 @@
 
-from t2 import *
+from t3 import *
 import sys
 
 app = QtWidgets.QApplication(sys.argv)
@@ -34,8 +34,8 @@ def prepare_tool_buttons(ToolButton,icon):
     # Вначале делаем общие настройки кнопки
     ToolButton.setAutoExclusive(True) #Если нажата одна кнопка у определенного родителя другие отжаты
     ToolButton.setCheckable(True) #Можно нажать и отпуустить кнопку
-    ToolButton.setMinimumSize(80, 60) #Устанавливаем размер кнопки минимальный
-    ToolButton.setMaximumSize(80, 60) #Устанавливаем размер кнопки максимальный
+    ToolButton.setMinimumSize(30, 30) #Устанавливаем размер кнопки минимальный
+    ToolButton.setMaximumSize(30, 30) #Устанавливаем размер кнопки максимальный
     ToolButton.setIcon(QIcon(icon))
     ToolButton.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
     ToolButton.setIconSize(QtCore.QSize(40, 40))
@@ -61,7 +61,7 @@ def prepare_tool_buttons(ToolButton,icon):
     ToolButton.setStyleSheet(style)
 
 prepare_tool_buttons(ui.toolButton,icon= '.\icons\well_icon.png')
-prepare_tool_buttons(ui.toolButton_2,icon= '.\icons\well_icon.png')
+prepare_tool_buttons(ui.toolButton_2,icon= '.\icons\palitrra.png')
 prepare_tool_buttons(ui.toolButton_3,icon= '.\icons\well_icon.png')
 prepare_tool_buttons(ui.toolButton_4,icon= '.\icons\well_icon.png')
 
